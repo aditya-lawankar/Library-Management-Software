@@ -13,7 +13,7 @@ As a librarian, they have the option to
 2. Edit book list.
 3. View requested books.
 
-Data is written and read from either csv or txt files.
+Data is written to and read from either csv or txt files.
 
 ## Installation
 
