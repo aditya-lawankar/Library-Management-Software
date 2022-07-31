@@ -28,7 +28,7 @@ l=f2.read()
 d=l.replace(',',' ')
 d=d.strip()  
 r=d.split('\n')
-d=dict() #{ lgid:pass} d={"aarav2":12,}
+d=dict() #{ lgid:pass}
 for f in r[1::]:
  f=f.split()
  d[f[0]]=f[1]
