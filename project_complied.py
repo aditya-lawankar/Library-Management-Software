@@ -5,12 +5,6 @@ import msvcrt as m
 clear= lambda:os.system('cls')
 hold= lambda: input()
 
-#change pass to *
-
-
-
-
-
 F=open("Lib2.csv","r")
 L=F.read()
 D=L.replace(',',' ')
