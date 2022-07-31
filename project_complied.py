@@ -70,7 +70,6 @@ def stud():
           hold()
     else:
          print("LOGIN ID Not Found ")
-
          
 def lgpass(id):
  ch=""
@@ -94,10 +93,7 @@ def lgpass(id):
      return True
  else:
      return False
-
-
-
-    
+ 
 def studview():
     print("\n",main[0][0],main[0][1],main[0][3])
     for i in main:
@@ -294,8 +290,6 @@ def lib():
 def libview():
     for i in main:
         print (i)
-
-        
 
 def edit():
     c=input("Enter sl no of book to edit")
