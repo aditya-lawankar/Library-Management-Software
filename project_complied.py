@@ -33,12 +33,11 @@ for f in r[1::]:
  f=f.split()
  d[f[0]]=f[1]
 
-    
 def stud():
     lgid=input("LOGIN ID: ")
     if(lgid in d):
         pas=input("PASSWORD: ")
-        if(d[lgid]==pas): #pass() #d[lgid]=pass
+        if(d[lgid]==pas): 
             #prog 
             clear()
             sopt=0
@@ -301,11 +300,6 @@ def libview():
 def edit():
     c=input("Enter sl no of book to edit")
     
-
-
-
-
-
 #main has all data
 opt=0
 while(opt!=4):
@@ -313,7 +307,7 @@ while(opt!=4):
     print("\t\t\tWELCOME TO LIB SOFTWARE")
     print("1.Student\n2.Teacher\n3.Librarian\n4.Exit")
     opt=int(input("Enter the option "))
-    if(opt==1): #stud
+    if(opt==1): 
      clear()
      stud()
     elif(opt==2):
@@ -327,5 +321,4 @@ while(opt!=4):
     else:
         print("Enter Valid Input")
         hold()
-        
         
