@@ -274,7 +274,7 @@ def lib():
             lopt=0
             print("\t\t\tWelcome Librarian: ",lgi)
             while(lopt!=4):
-                print("\n1.View Books\n2.Edit Book List\n3.\n4. View Requested Books\n5.Exit") 
+                print("\n1.View Books\n2.Edit Book List\n3.View Requested Books\n4.Exit") 
                 lopt=int(input("Enter the option: "))
                 if(lopt==1):
                  libview()
