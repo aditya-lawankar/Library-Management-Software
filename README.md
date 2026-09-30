@@ -1,25 +1,38 @@
-# library-management-software
+# Library Management Software
 
-A library management software written in Python that supports basic CRUD operations for managing books with different levels of access for students, faculty and the librarian.
+A command-line library system written in Python, with separate menus for students, faculty and
+the librarian. Book records, logins and book requests are kept in plain CSV and text files.
 
-As a student or faculty, they have the option to 
-1. View available books.
-2. Borrow a book.
-3. Return a book.
-4. Request a book not in library.
+## Features
 
-As a librarian, they have the option to
-1. View all the books.
-2. Edit book list.
-3. View requested books.
+**Students and faculty**
+- View the book list
+- Borrow and return books
+- Request a book the library does not have (students)
 
-Data is written to and read from either csv or txt files.
+**Librarian**
+- View the full catalogue, including who has borrowed each book
 
-## Installation
+## Data files
 
-Clone this repository.
-```bash 
-git clone link-of-this-repository
+| File | Contents |
+|---|---|
+| `books.csv` | Catalogue: serial number, title, due date, cost and borrower ID |
+| `logins.csv` | Login IDs and passwords |
+| `requests.txt` | The latest book request |
+
+## Running
+
+Requires Python 3 on Windows (the menus use `msvcrt` and `cls`).
+
+```bash
+git clone https://github.com/aditya-lawankar/Library-Management-Software.git
+cd Library-Management-Software
+python library.py
 ```
-Run project_compiled.py after changing to the project directory.
 
+Sample login IDs and passwords are in `logins.csv`.
+
+## License
+
+MIT
